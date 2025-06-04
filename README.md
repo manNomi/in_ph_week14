@@ -8,8 +8,6 @@ Vue.js를 사용한 개인 포트폴리오 웹사이트입니다.
 npm install
 ```
 
-### Compiles and hot-reloads for development
-
 ```
 npm run serve
 ```
@@ -49,18 +47,19 @@ src/
 ### 4. 문제해결과정
 
 1. css 깨짐문제
-   <img src="/readme/1.png"/>
+   <img src="./public/readme/1.png"/>
    해당 사진처럼 border-bottom에 의해 글씨가 깨진는 현상 발생
    원인 : 부모요소의 height가 180px로 고정이 되어있어서 자식요소가 넘치는 경우가 발생했음
    해결 : 1.부모요소의 고정값 제거
-   <img src="/readme/2.png"/>
+   <img src="./public/readme/2.png"/>
    -> 해당 사진처럼 같은 라인의 태그가 height 값이 달라져버림
    해결 : 2.div태그에 flex 적용
-   <img src="/readme/3.png"/>
+   <img src="./public/readme/3.png"/>
    -> 모든 div 태그가 적용이 되어서 문제발생
    해결 : 3.container div태그 방법
    -> 모든 div를 감싸는 container 태그를 만들고 해당 태그를 통해 felxbox 제어
-   <img src="/readme/4.png"/>
+   <img src="./public/readme/4.png"/>
+
    -> width가 줄어듦에 따라 height가 늘어나고 줄어들도록 구현했습니다
 
 2. hover 마스킹 문제  
@@ -81,4 +80,3 @@ src/
 - Vue.js 2
 - CSS3 (Flexbox)
 - HTML5
-# in_ph_week14
